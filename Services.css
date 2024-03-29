@@ -1,0 +1,179 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e82de, #db4ff4);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #191919;
+}
+
+header nav ul li a {
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f10303 !important;
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Стили для списка услуг */
+section ul li {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section ul li:hover {
+    background-color: #f0f0f0;
+}
+
+section ul li a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    width: calc(100% - 120px);
+}
+
+/* Стили для кнопки "Просмотреть" */
+section ul li .view-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section ul li .view-button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для пакетов туров */
+.tour-package {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-size: cover; /* Сделать фон растягиваемым */
+    background-position: center; /* Центрировать фон */
+}
+
+/* Стили для фона первого пакета тура */
+.tour-package:nth-child(1) {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5exZr3cGfiIXXk27ElvC6xaYrD6t4G_Exw&usqp=CAU'); /* Путь к изображению для первого пакета */
+}
+
+/* Стили для фона второго пакета тура */
+.tour-package:nth-child(2) {
+    background-image: url('tour2.jpg'); /* Путь к изображению для второго пакета */
+}
+
+/* Стили для кнопки "Купить" */
+.tour-package button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.tour-package button:hover {
+    background-color: #555;
+}
+
+/* Стили для ссылки на тур */
+.tour-link a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.tour-link a:hover {
+    color: #5874ff;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
