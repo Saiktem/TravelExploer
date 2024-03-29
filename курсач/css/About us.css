@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e82de, #db4ff4);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Стили для заголовка */
+header {
+    width: 90%; /* Ширина хедера 90% от контейнера */
+    max-width: 1200px; /* Максимальная ширина хедера */
+    margin: 0 auto; /* Выравнивание по центру */
+    color: #333; /* Цвет текста */
+    padding: 20px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста по левому краю */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 20px; /* Закругление верхнего левого угла */
+    border-top-right-radius: 20px; /* Закругление верхнего правого угла */
+}
+
+header h1 {
+    font-size: 2rem; /* Уменьшенный размер шрифта заголовка */
+    margin-bottom: 10px; /* Уменьшенный отступ снизу */
+}
+
+
+header p {
+    font-size: 1.2rem; /* Размер шрифта абзаца */
+    margin-bottom: 20px; /* Увеличенный отступ снизу */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #333; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-size: 1.1rem; /* Размер шрифта ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+header nav ul li a:hover {
+    color: #f10303; /* Цвет ссылок при наведении */
+}
+ 
+
+
+.about-section {
+    width: 90%; /* Ширина секции 90% от контейнера */
+    max-width: 1200px; /* Максимальная ширина секции */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    background-color: #fff; /* Белый фон */
+    color: #333; /* Цвет текста */
+    padding: 40px; /* Внутренние отступы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 10px; /* Скругление углов */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Увеличенный размер заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    color: #333; /* Цвет заголовка */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Размер шрифта текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111111; /* Белый цвет текста */
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Выравнивание элементов по центру */
+}
+
+.team-member {
+    flex: 0 0 calc(33.33% - 20px); /* Ширина каждого элемента (33.33% ширины контейнера минус промежутки между элементами) */
+    margin: 0 10px 20px; /* Отступы между элементами */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px; /* Фиксированная ширина */
+    height: 150px; /* Фиксированная высота */
+    object-fit: cover; /* Заполнение изображения в блоке */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px; /* Закругление нижнего левого угла */
+    border-bottom-right-radius: 20px; /* Закругление нижнего правого угла */
+    margin: 0 auto; /* Автоматическое выравнивание по горизонтали */
+    width: 90%; /* Ширина футера */
+    max-width: 1200px; /* Максимальная ширина футера */
+}
+
+

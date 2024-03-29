@@ -1,0 +1,150 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e82de, #db4ff4);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+header {
+    width: 90%; /* Ширина хедера 90% от контейнера */
+    max-width: 1200px; /* Максимальная ширина хедера */
+    margin: 0 auto; /* Выравнивание по центру */
+    color: #333; /* Цвет текста */
+    padding: 20px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста по левому краю */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 20px; /* Закругление верхнего левого угла */
+    border-top-right-radius: 20px; /* Закругление верхнего правого угла */
+}
+
+header h1 {
+    font-size: 2rem; /* Уменьшенный размер шрифта заголовка */
+    margin-bottom: 10px; /* Уменьшенный отступ снизу */
+}
+
+header p {
+    font-size: 1.2rem; /* Размер шрифта абзаца */
+    margin-bottom: 20px; /* Увеличенный отступ снизу */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #333; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-size: 1.1rem; /* Размер шрифта ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+header nav ul li a:hover {
+    color: #f10303; /* Цвет ссылок при наведении */
+}
+
+.back-link {
+    float: left; /* Поменяли направление выравнивания */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+    margin-bottom: 100px; /* Нижний отступ, чтобы не перекрывать футер */
+}
+
+.city-tour {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-tour img {
+    max-width: 100%;
+    height: 200px; /* Задаем фиксированную высоту для изображений */
+    border-radius: 10px 0 0 10px;
+}
+
+.description {
+    padding: 20px;
+    flex: 1;
+    height: 200px; /* Задаем фиксированную высоту для описаний */
+    overflow: hidden; /* Добавляем скрытие лишнего контента, если его высота превышает заданную */
+}
+
+.description h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 0.9rem;
+}
+
+.description button {
+    background-color: #bd72f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.description button:hover {
+    background-color: #e8e8e8;
+}
+
+
+
+
+
+button {
+    background-color: #cfcfcf;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 1200px;
+    margin: auto; /* Центрирование по горизонтали */
+    width: 90%; /* Ширина футера */
+}
