@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelExplorer - Личный кабинет</title>
+    <link rel="stylesheet" href="kr.css">
+</head>
+<body>
+    <header class="header-background">
+        <h1>Добро пожаловать в TravelExplorer!</h1>
+        <p>Исследуйте мир вместе с нами</p>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="About us.html">О нас</a></li>
+                <li><a href="Services.html">Услуги</a></li>
+                <li><a href="directions.html">Направления</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="отзывы.html">Отзывы</a></li>
+                <li><a href="лк.html">Личный кабинет</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="profile-section">
+            <h2>Личный кабинет</h2>
+            <div class="profile-info">
+                <p><strong>Имя:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Телефон:</strong> +1234567890</p>
+                <p><strong>Адрес:</strong> 123 Main Street, City, Country</p>
+                <!-- Другие данные пользователя -->
+            </div>
+            <form id="profileEditForm" class="profile-edit" style="display: none;">
+                <h2>Редактировать профиль</h2>
+                <div class="form-group">
+                    <label for="newFirstName">Новое имя:</label>
+                    <input type="text" id="newFirstName" name="newFirstName" placeholder="Введите новое имя">
+                </div>
+                <div class="form-group">
+                    <label for="newLastName">Новая фамилия:</label>
+                    <input type="text" id="newLastName" name="newLastName" placeholder="Введите новую фамилию">
+                </div>
+                <div class="form-group">
+                    <label for="newEmail">Новый Email:</label>
+                    <input type="email" id="newEmail" name="newEmail" placeholder="Введите новый email">
+                </div>
+                <button type="submit">Сохранить изменения</button>
+            </form>
+            <div class="profile-actions">
+                <button id="editBtn">Редактировать профиль</button>
+                <button>Изменить пароль</button>
+                <button>Выйти</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TravelExplorer. Все права защищены.</p>
+    </footer>
+
+    <script src="profile.js"></script> <!-- Скрипт для управления формой -->
+</body>
+</html>
